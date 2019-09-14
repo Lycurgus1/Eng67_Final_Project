@@ -45,6 +45,7 @@ class CmdUserInterface:
         print('Please select option:\n')
         option_selected = input()
 
+
         if option_selected.lower() == 'exit':
             exit()
         elif option_selected == '':
@@ -54,7 +55,8 @@ class CmdUserInterface:
             print('Please check your downloads folder')
             self.manage_get_ITJW_top_30_menu()
         elif int(option_selected) == 2:
-            Top30CSVGenerator().generate_top_30_csv(ItJobsWatchHomePageTop30(itjobswatch_home_page_url()).get_top_30_table_elements_into_array(), os.path.expanduser('~/Downloads/'), 'ItJobsWatchTop30.csv', 'true' )
+            top_30 = ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
+            Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(), os.path.expanduser('~/Downloads/'), 'ItJobsWatchTop30.csv', top_30.get_table_headers_array())
         elif int(option_selected) == 3:
             self.menu_control()
         else:
