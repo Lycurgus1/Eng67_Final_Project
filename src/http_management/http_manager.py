@@ -1,9 +1,9 @@
 import requests
 import os.path
-from config_manager import itjobswatch_home_page_test_file, itjobswatch_home_page_url
+from config_manager import itjobswatch_home_page_test_file, itjobswatch_home_page_url, itjobswatch_perm_search_test_page
 
 
-class HtmlObjectManager():
+class HtmlResponseManager():
 
     def __init__(self, file_or_url_location):
         self.url_response = None
@@ -25,4 +25,4 @@ class HtmlObjectManager():
 
 
 if __name__ == '__main__':
-    print(HtmlObjectManager(itjobswatch_home_page_url()).html)
+    print(HtmlResponseManager(itjobswatch_home_page_test_file()).html)
