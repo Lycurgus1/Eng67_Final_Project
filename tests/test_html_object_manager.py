@@ -1,7 +1,6 @@
 import pytest
-import os
 from config_manager import itjobswatch_home_page_test_file, itjobswatch_home_page_url, get_test_env_setting
-from src.html_object_manager import HtmlObjectManager
+from src.http_management.http_manager import HtmlObjectManager
 
 
 class TestHtmlObjectManager:
