@@ -5,7 +5,7 @@ from src.csv_generators.top_30_csv_generator import * # importing file that will
 import boto3
 from botocore.exceptions import NoCredentialsError
 import os
-from aws_upload import upload_to_aws # importing the function that will upload file to aws
+# from aws_upload import upload_to_aws # importing the function that will upload file to aws
 from boto3.s3.transfer import S3Transfer
 
 # the below functions will be run when we run our python main.py in the shell
