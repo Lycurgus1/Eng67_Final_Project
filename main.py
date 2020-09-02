@@ -14,3 +14,6 @@ if __name__ == '__main__':
     # this function will take our csv file that will be stored in our downloads folder and push it to our s3 bucket, the details are specified below
     upload_to_aws('Downloads/ItJobsWatchTop30.csv', 'eng-67-shahrukh-devops', 'ItJobsWatchTop30.csv')
 
+
+
+## making changes to merge
