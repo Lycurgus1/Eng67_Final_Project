@@ -56,3 +56,17 @@ CMD [ "python", "main.py" ]
 ```
 sudo docker run -d -t bariallali/python_final_app:12
 ```
+
+## Creating A Docker EC2 instance
+
+- Within AWS we will create an EC2 instance 
+
+![](/images/create-docker-app.png)
+
+
+  
+- We will then provision it with Docker using the follwoing commands
+
+```
+
+```

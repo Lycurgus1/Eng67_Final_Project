@@ -6,7 +6,7 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD [ "python", "Flask/app.py" ]
+# CMD [ "python", "Flask/app.py" ]
 
 # second stage build
 
