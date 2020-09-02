@@ -24,4 +24,4 @@ Jinja2==2.10
 MarkupSafe==1.1.1
 Werkzeug==0.15.5
 boto3==1.1.3
-os=2.1.4
+os==2.1.4
