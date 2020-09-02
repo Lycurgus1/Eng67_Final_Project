@@ -1,0 +1,56 @@
+{% extends "master.html" %}
+
+{% block CSS %}
+    <link href="../static/css/cover.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block title %}
+<title>Sparta Global | Home</title>
+{% endblock %}
+
+{% block content %}
+
+<body class="text-center" data-gr-c-s-loaded="True">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+  <header class="masthead mb-auto">
+    <div class="inner">
+        <img class="masthead-brand" src="../static/images/Sparta-global-logo-white.svg" alt="" width="200" height="200">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="/homepage">Home</a>
+        <a class="nav-link text-info disabled" href="">Contact</a>
+        <a class="nav-link text-danger" href="">Log Out</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+      <h1 class="cover-heading font-weight-bold"><span style="color: #e38412"> ITJobsWatch </span> <span style="color: #37c4c4"> Scraper</span> </h1>
+      <p class="lead font-weight-normal" > <span class="font-weight-bold" style="color: #417fb1"> Welcome {{username}}, </span> This is a program that runs on Python to grab data from ITJobsWatch Scraper!<br>
+        When you are ready. We will get you the top Job roles, depending on how many you want. <br>
+        <span class="font-weight-bold" style="color: #ffde56">Click Drop Down.</span></p>
+  </main>
+
+<div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" style="background-color: #e33661; color: #37c4c4; font-weight: bold" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Number to Fetch
+  </a>
+
+  <div class="text-center dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#" style="color: #52ca11">30</a>
+    <a class="dropdown-item" href="#" style="color: #e39536">60</a>
+    <a class="dropdown-item" href="#" style="color: #e34a36">90</a>
+  </div>
+</div>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p> Template by <a href="https://twitter.com/mdo">@mdo</a></p>
+    </div>
+  </footer>
+</div>
+
+{% endblock %}
+
