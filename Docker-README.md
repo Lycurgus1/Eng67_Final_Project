@@ -5,7 +5,7 @@
 
 - Crating a Dockerfile will allow our Jenkins pipeline to create an image of our application
 
-![](/images/)
+![](/images/build-docker-image.png)
 
 - We first create a basic DockerFile
 
