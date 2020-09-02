@@ -1,3 +1,5 @@
+from config_manager import itjobswatch_home_page_url
+from src.itjobswatch_html_readers.itjobswatch_home_page_top_30 import ItJobsWatchHomePageTop30
 # from src.cmd_user_interface import CmdUserInterface
 from src.csv_generators.top_30_csv_generator import * # importing file that will create our csv file from the specified url
 import boto3
