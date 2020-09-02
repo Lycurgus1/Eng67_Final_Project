@@ -2,6 +2,8 @@ from flask import Flask, render_template, redirect, url_for, request, session, f
 from functools import wraps
 import csv
 
+PORT=5000
+
 app = Flask(__name__)
 
 
@@ -12,8 +14,8 @@ def base():
 
 @app.route("/data", methods=['GET'])
 def data():
-    # /usr/src/app/Downloads
-    with open('static/data/ItJobsWatchTop30.csv') as csv_file:
+    
+    with open('/usr/src/app/Flask/static/data/ItJobsWatchTop30.csv') as csv_file:
         data = csv.reader(csv_file, delimiter=',')
         jobs = []
         for row in data:
@@ -30,4 +32,4 @@ def data():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=PORT)

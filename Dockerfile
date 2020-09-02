@@ -6,7 +6,7 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD [ "python", "main.py" ]
+CMD [ "python", "Flask/app.py" ]
 
 # second stage build
 
@@ -20,4 +20,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 5000
 
-CMD [ "python", "app.py" ]
+CMD [ "python", "Flask/app.py" ]
