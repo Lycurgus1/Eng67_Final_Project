@@ -9,7 +9,7 @@ RUN pip install -r requirements.txt
 
 # second stage build
 
-# Looking for merge changes
+# Looking for merge changes -> v2
 
 FROM python:3.8-slim
 

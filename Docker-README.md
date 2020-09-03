@@ -70,3 +70,17 @@ sudo docker run -d -t bariallali/python_final_app:12
 ```
 
 ```
+
+- The following command will delete all images
+```commandline
+sudo docker rmi -f $(docker images -a -q)
+```
+
+# Running our Flask Application
+
+- If the person running the application has the access and secret keys stored as an environment variable, all they would have to do
+is run the bellow command
+
+```commandline
+sudo docker run -e AWS_ACCESS_KEY=$AWS_ACCESS_KEY -e AWS_SECRET_KEY=$AWS_SECRET_KEY -d -t -p 5000:5000 bariallali/flask_final_app:20
+```
