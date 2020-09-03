@@ -41,3 +41,8 @@ aws s3 ls s3://eng-67-shahrukh-devops
 
 We had an issue where the flask application couldn't find the downloads folder which would contain the CSV that our front end would read from
 - We overcame this by placing as downloads folder into the flask application, thus the app could read from it and then load the CSV successfully
+
+
+## Benefits of S3
+
+- S3 acts similar to other cloud data storage such as dropbox however S3 also allows you to host static websites

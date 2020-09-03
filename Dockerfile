@@ -6,7 +6,6 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-# CMD [ "python", "Flask/app.py" ]
 
 # second stage build
 
@@ -22,9 +21,6 @@ ENV AWS_SECRET_KEY=$AWS_SECRET_KEY
 
 RUN pip install -r requirements.txt
 
-EXPOSE 5000
-
 CMD [ "python", "main.py" ]
 
 
-# store env variable of the access key

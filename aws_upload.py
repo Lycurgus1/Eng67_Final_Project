@@ -15,6 +15,6 @@ def upload_to_aws():
             aws_secret_access_key=SECRET_KEY
         )
 
-    s3_client.upload_file('Downloads/ItJobsWatchTop30.csv', 'eng-67-shahrukh-devops', 'ItJobsWatchTop30Automation3.csv')
+    s3_client.upload_file('Downloads/ItJobsWatchTop30.csv', 'eng-67-shahrukh-devops', 'ItJobsWatchTop30.csv')
     print("Your file has been successfully uploaded to an AWS bucket!")
 
