@@ -9,8 +9,6 @@ RUN pip install -r requirements.txt
 
 # second stage build
 
-# Looking for merge changes -> v3
-
 FROM python:3.8-slim
 
 COPY --from=app /usr/src/app /usr/src/app
